@@ -8,7 +8,7 @@ A modern, responsive personal portfolio website built using HTML, CSS, and JavaS
 
 ## 📸 Preview
 
-![Portfolio Preview](screenshot\myPortfolio.png)
+![Portfolio Preview](\screenshot\myPortfolio.png)
 
 ## ✨ Features
 
