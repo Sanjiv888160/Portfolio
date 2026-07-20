@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --primary-color: #04052e;
+    --dark-color: #02010a;
+    --orange: #d00000;
+    --green: #11ee11;
+    --white: #fff;
+    --gray: rgb(150, 139, 139);
+}
+
+
+
+/* BASIC STYLING */
+
+body{
+    background-color: var(--dark-color);
+}
+.container{
+    max-width: 1400px;
+    padding-inline: 3rem;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+p{
+    color: var(--gray);
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.space{
+    margin-block: 50px;
+    padding-block: 80px;
+}
+img{
+    width: 100%;
+}
+
+/* header-part */
+
+header{
+    position: relative;
+    z-index: 2;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    background-color: var(--dark-color);
+    line-height: 5rem;    
+}
+.logo{
+    color: var(--green);
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.nav-lists ul li{
+    margin-right: 3rem;
+}
+.nav-lists ul li a{
+    position: relative;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.nav-lists ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.4rem;
+    width: 0%;
+    height: 2.3px;
+    background-color: var(--green);
+    transition: .5s;
+}
+.nav-lists ul li a:hover::after{
+    width: 100%;
+}
+
+/* hero-section */
+
+.hero-section{
+    height: 100vh;
+    justify-content: space-between;
+}
+.content{
+    color: var(--white);
+    flex-basis: 45%;
+}
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content img{
+    margin-top: 3rem;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid var(--green);
+    box-shadow: 0px 1px 500px  var(--green);
+}
+
+h1{
+    font-size: 3rem;
+    line-height: 4.3rem;
+    margin-bottom: 1.5rem;
+}
+h1 span{
+    color: var(--green);
+    font-size: 4rem;
+}
+
+.content p{
+    margin-top: .5rem;
+}
+
+
+/* about-section */
+
+h2{
+    text-align: center;
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+h2 span{
+    color: var(--green);
+}
+.para .btn{
+    margin-top: 2rem;
+}
+
+/* skill-section */
+
+.skill-section{
+    margin-block: 2rem;
+}
+.skill{
+    color: var(--white);
+    width: 18rem;
+    border: 2px solid var(--green);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    text-align: left;
+    transition: .3s;
+}
+.project:hover , .skill:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 1px 20px  var(--green);
+}
+.skill ul{
+    margin-top: 1.5rem;
+}
+.skill ul li{
+    margin-bottom: .7rem;
+}
+.skill h3{
+    font-size: 2rem;
+}
+.wrap{
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+/* Project-Section */
+
+.project{
+    width: 20rem;
+    aspect-ratio: 1;
+    border: 2px solid var(--green);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: .5s;
+}
+.text{
+    color: var(--white);
+    margin-top: 1rem;
+}
+.text p{
+    margin-top: .7rem;
+}
+
+/* contact-section */
+
+.contact-section{
+    padding-bottom: 1rem;
+}
+.content h3{
+    font-size: 1.3rem;
+}
+.contact{
+    margin-top: 2rem;
+}
+.info{
+    margin-bottom: .5rem;
+}
+.info i{
+    margin-right: .5rem;
+}
+.icons{
+    margin-top: 2rem;
+}
+.icon{
+    width: 2.3rem;
+    height: 2.3rem;
+    display: inline-block;
+    line-height: 2.3rem;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 2px solid var(--green);
+    transition: .3s ease-in-out;
+}
+.icon:hover{
+    background-color: var(--green);
+    box-shadow: 2px 2px 40px var(--green);
+    transform: translateY(-5px);
+}
+.icon i{
+    font-size: 1.2rem;
+}
+.resume{
+    margin-top: 3rem;
+}
+.btn{
+    background-color: var(--green);
+    border: none;
+    outline: none;
+    padding: .8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: .5s ;
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 0px 2px 70px var(--green);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.form-div{
+    width: 100%;
+}
+form input,textarea{
+    padding: .8rem 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+form textarea{
+    resize: none;
+}
+
+/* footer-section */
+
+
+.footer-section{
+    color: var(--white);
+    text-align: center;    
+}
+.line{
+    height: 1px;
+    background-color: var(--gray);
+}
+.para{
+    padding-block: 1rem;
+}
+.para i{
+    color: var(--green);
+}
+.hamburgur{
+    display: none;
+}
+.close{
+    display: none;
+}
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 750px){
+    .hero-section{
+        flex-direction: column-reverse;
+        margin-top: 10rem;
+    }
+    h1{
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-top: 3rem;
+    }
+    h1 span{
+        font-size: 3.5rem;
+    }
+    .photo{
+        display: none;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .form-div{
+        margin-top: 6rem;
+    }
+    .hamburgur{
+        display: block;
+        font-size: 1.5rem;
+    }
+    .close{
+        display: block;
+    }
+    .nav-lists{
+        position: absolute;
+        top: 0;
+        right: -17rem;
+        background-color: var(--green);
+        width: 17rem;
+        height: 100vh;
+        transition: .5s ;
+    }
+    .nav-lists ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-lists ul li a{
+        color: var(--dark-color);
+        font-weight: 600;
+    }
+     .close{
+        margin-top: 2rem;
+        text-align: right;
+     }
+    .close i{
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        border-radius: 50%;
+        background-color: var(--dark-color);
+        margin-right: 2rem;
+    }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio using Html, Css and Js</title>
+
+    <!-- custom-css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome-cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"/>
+</head>
+<body>
+    <!-- HEADER PART -->
+    <header>
+        <nav class="navbar container flex">
+            <a href="index.html" class="logo">Portfolio.</a>
+
+            <div class="nav-lists" id="menu">
+                <div class="close" >
+                    <a href="" id="close"><i class="fa-solid fa-xmark" ></i></a>
+                </div>
+                <ul class="flex">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="hamburgur" id="bar">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECTION PART -->
+    <main>
+        <!-- Hero-Section -->
+        <section class="hero-section container flex">
+            <div class="content hero-text">
+                <h1>Hey, I am <br><span>Sanjeev Kumar</span></h1>
+                <h3>FullStack Developer</h3>
+                <p>Passionate Python Full Stack Developer with skills in Python, Django, HTML, CSS, JavaScript and MySQL. I enjoy building responsive, secure, and user-friendly web applications. Always eager to learn new technologies and create efficient, real-world solutions.</p>
+            </div>
+            <div class="content outer">
+                <div class="image-div">
+                    <img src="assets/sanjiv.jpeg" alt="" >
+                </div>
+            </div>
+        </section>
+
+        <!-- About-Section -->
+        <section class="about-section container space" id="about">
+            <h2>About <span>Me</span></h2>
+            <div class="row">
+                <div class="content outer">
+                    <div class="image-div">
+                        <img src="assets/sanjiv.jpeg" alt="" class="photo">
+                    </div>
+                </div>
+                <div class="content para">
+                    <p>I am a passionate Python Full Stack Developer with expertise in building responsive, scalable, and user-friendly web applications. I specialize in Python, Django, HTML, CSS, JavaScript, Bootstrap, and MySQL, with a strong focus on creating secure and efficient backend systems.</p>
+                    <p>I enjoy developing complete web solutions—from designing responsive user interfaces to building RESTful APIs, authentication systems, and database-driven applications. I continuously improve my skills by working on real-world projects and exploring modern web development technologies.</p>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills-Section -->
+        <section class="skill-section container space" id="skills">
+            <h2><span>My</span> Skills</h2>
+            <div class="row wrap">
+                <div class="skill">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3 </li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Django </li>
+                        <li>Node Js</li>
+                        <li>Express Js</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Database</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>SQLite</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+                <div class="skill">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git And GitHub</li>
+                        <li>AWS  </li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project-Section -->
+        <section class="project-section space container" id="project">
+        <h2>My <span>Projects</span></h2>
+        <div class="row wrap">
+            <div class="project">
+                <img src="assets/image1.jpg" alt="">
+                <div class="text">
+                    <h3>Blog Web Application</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id eaque corporis sit accusamus perferendis beatae corrupti enim magnam consequatur!</p>
+                </div>
+
+            </div>
+             <div class="project">
+                <img src="assets/image1.jpg" alt="">
+                <div class="text">
+                    <h3>E-commerce Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id eaque corporis sit accusamus perferendis beatae corrupti enim magnam consequatur!</p>
+                </div>
+
+            </div>
+             <div class="project">
+                <img src="assets/image1.jpg" alt="">
+                <div class="text">
+                    <h3>AI-Powered Recommendation System </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, id eaque corporis sit accusamus perferendis beatae corrupti enim magnam consequatur!</p>
+                </div>
+
+            </div>  
+        </div>
+        </section>
+
+        <!-- Contact-Section -->
+        <section class="contact-section container space" id="contact">
+            <h2><span>Contact</span> Me</h2>
+            <div class="row">
+                <div class="content">
+                    <h3>Let's Work Together</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum ipsum quis provident fuga eum enim mollitia autem reiciendis eaque exercitationem consequatur ullam, rem sunt dolores deleniti consectetur magni esse expedita.</p>
+                    <div class="contact">
+                        <div class="info">
+                            <i class="fa-solid fa-envelope"></i>
+                            Skkumar888160@gmail.com
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-phone"></i>
+                            +91 88816 07717
+                        </div>
+                        <div class="icons">
+                            <a href="" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""></a>
+                        </div>
+                        <div class="resume">
+                            <a href="assets/Resume.pdf" download>
+                                <button class="btn">Download Resume</button>
+                            </a>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="content form-div">
+                    <form>
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <input type="text" placeholder="Enter Subject">
+                        <textarea rows="6" placeholder="Enter Message"></textarea>
+                        <button class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER PART   -->
+
+    <footer>
+        
+        <div class="footer-section container">
+            <div class="line"></div>
+            <p class="para">Made with <i class="fa-solid fa-heart"></i> by Sanjeev Kumar &copy;2026.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
