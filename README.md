@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website built using HTML, CSS, and JavaS
 
 ## 🚀 Live Demo
 
-🔗 https://your-portfolio-link.netlify.app
+🔗 https://sanjiv888160.github.io/Portfolio/
 
 ### 📸 Preview
 
