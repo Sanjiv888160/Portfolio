@@ -6,9 +6,9 @@ A modern, responsive personal portfolio website built using HTML, CSS, and JavaS
 
 🔗 https://your-portfolio-link.netlify.app
 
-## 📸 Preview
+### 📸 Preview
 
-![Portfolio Preview](\screenshot\myPortfolio.png)
+![Portfolio Preview](screenshot/myPortfolio.png)
 
 ## ✨ Features
 
